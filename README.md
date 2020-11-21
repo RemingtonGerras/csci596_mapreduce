@@ -1,4 +1,4 @@
-# Map Reduction: Parallelizing Mapmaking in Cosmology
+# Map Generation: Parallelizing Mapmaking in Cosmology
 
 The goal of this project is to parallelize the generation of temperature/polarization anisotropy maps from ground-based telescopes.
 
