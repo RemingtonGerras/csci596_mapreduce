@@ -21,9 +21,9 @@ Convert patches of the observed sky into square tiles and send each square tile 
 
 An example data reduction method is fairly simple, assuming the time-ordered data depends linearly on the map. 
 
-![alt text](linear_eq.png)
+![alt text](mat_lin.png) => ![alt text](linear_eq.png) 
 
-y is an n-dimensional vector corresponding to the TOD, x is a m-dimensional vector corresponding to the map, A is a known nxm matrix, and n is an n-dimensional noise vector. Source from Eq 1 of How to Make Maps from CMB Data Without Losing Information, Max Tegmark 
+y is an n-dimensional vector corresponding to the TOD, x is a m-dimensional vector corresponding to the map, A is a known nxm matrix, and n is an n-dimensional noise vector.
 
 We therefore hand patches of data to processes that also own said patch, then sum the received patch of data with the currently owned patch, and pass the newly summed data to the next process. Continue until all patches have their data fully summed by all contributing processes. 
 
